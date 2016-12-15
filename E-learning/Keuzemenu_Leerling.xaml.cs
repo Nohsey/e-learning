@@ -50,17 +50,15 @@ namespace E_learning
         }
         private void PopulateListBox()
         {
-          
+            DataTable dtVakken = new DatabaseClass().GetVakken();
 
-          DataTable dtVakken = new DatabaseClass().GetVakken();
+             foreach (DataRow row in dtVakken.Rows)
+             {
+                 lstVakken.Add(new Vak() { ID = row["VakID"].ToString(), VakNaam = row["Omschrijving"].ToString() });
+             }
 
-          foreach (DataRow row in dtVakken.Rows)
-          {
-              lstVakken.Add(new Vak() { ID = row["VakID"].ToString(), VakNaam = row["Omschrijving"].ToString() });
-          }
-
-          lbVakken.ItemsSource = lstVakken;
-}
+             lbVakken.ItemsSource = lstVakken;
+        }
 
         private void lbVakken_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

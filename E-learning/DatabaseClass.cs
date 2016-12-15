@@ -151,5 +151,20 @@ namespace E_learning
 
         }
 
+        public DataTable GetAlleLesOnderwerp()
+        {
+            DataTable retValue = new DataTable();
+            db_connection();
+
+            using (MySqlCommand cmd = new MySqlCommand("Select * from lesonderwerp"))
+            {
+                cmd.Connection = connect;
+                MySqlDataReader reader = cmd.ExecuteReader();
+                retValue.Load(reader);
+                connect.Close();
+            }
+            return retValue;
+
+        }
     }
     }

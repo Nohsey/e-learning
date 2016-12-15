@@ -12,8 +12,10 @@ D:\School\Leerjaar2\E-learning\E-learning\bin\Debug\E-learning.exe
 D:\School\Leerjaar2\E-learning\E-learning\bin\Debug\E-learning.pdb
 D:\School\Leerjaar2\E-learning\E-learning\obj\Debug\E-learning.exe
 D:\School\Leerjaar2\E-learning\E-learning\obj\Debug\E-learning.pdb
-D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\E-learning.csprojResolveAssemblyReference.cache
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\LesForm.baml
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\LesForm.g.cs
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\cmsmenu.baml
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\cmsmenu.g.cs
+D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\lesonderwerpbeheer.baml
+D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\lesonderwerpbeheer.g.cs
+D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\E-learning.csprojResolveAssemblyReference.cache

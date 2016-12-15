@@ -1,7 +1,7 @@
 ﻿<Window x:Class="E_learning.LesForm"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LesForm" Height="661.35" Width="1092" Background="#FFAFD8DF" Foreground="White">
+        Title="LesForm" Height="650" Width="1080" Background="#FFAFD8DF" Foreground="White" Icon="img/LOGO.png">
     <Grid Width="1080">
 
     </Grid>

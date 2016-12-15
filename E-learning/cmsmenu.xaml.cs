@@ -35,5 +35,12 @@ namespace E_learning
             login.Show();
             this.Close();
         }
+
+        private void btBeheerLesonderwrp_Click(object sender, RoutedEventArgs e)
+        {
+            lesonderwerpbeheer lb = new lesonderwerpbeheer();
+            lb.Show();
+            this.Hide();
+        }
     }
 }
