@@ -23,3 +23,6 @@ D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\RegLesOnd.baml
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\RegLesOnd.g.cs
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\LesWijzig.baml
 D:\School\Leerjaar2\E-Learning\E-learning\obj\Debug\LesWijzig.g.cs
+C:\Users\Nosey\e-learning\E-learning\bin\Debug\E-learning.exe.config
+C:\Users\Nosey\e-learning\E-learning\obj\Debug\E-learning.exe
+C:\Users\Nosey\e-learning\E-learning\obj\Debug\E-learning.pdb
