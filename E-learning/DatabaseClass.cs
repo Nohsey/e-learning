@@ -94,14 +94,14 @@ namespace E_learning
 
                 else
                 {
-                    MessageBox.Show("whoops! Het lijkt erop dat er een fout is opgetreden, neem contact op met de beheerders van het systeem.");
+                    MessageBox.Show("whoops! Het lijkt erop dat er een fout is opgetreden, neem contact op met de beheerders van het systeem.", "WHOOPS!");
                 }
-                
+
             }
 
             else
             {
-                MessageBox.Show("Uw gebruikersnaam of wachtwoord is onjuist");
+                MessageBox.Show("Uw gebruikersnaam of wachtwoord is onjuist", "Oh nee!");
             }
         }
 
@@ -132,7 +132,7 @@ namespace E_learning
                 connect.Close();
             }
             return retValue;
-            
+
         }
 
         public DataTable GetLes(string sLesonderwerpID)
@@ -167,27 +167,87 @@ namespace E_learning
 
         }
 
-        public void newLesOnderwerp(string sVakID, string sVakOmschrijving)
+        public void newLesOnderwerp(string sVakID, string sVakOmschrijving, RegLesOnd form)
         {
             db_connection();
             MySqlCommand cmd = new MySqlCommand();
             cmd.CommandText = "insert into lesonderwerp (LesonderwerpID, LesOmschrijving, VakID) VALUES (NULL, @vakoms, @vakid);";
             cmd.Parameters.AddWithValue("@vakid", sVakID);
             cmd.Parameters.AddWithValue("@vakoms", sVakOmschrijving);
-            cmd.Connection = connect;         
+            cmd.Connection = connect;
 
             try
             {
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Het lesonderwerp: " + sVakOmschrijving + " is succesvol aangemaakt.", "WOOHOO!");
+                lesonderwerpbeheer lob = new lesonderwerpbeheer();
+                lob.Show();
+                form.Close();
+
             }
             catch
             {
-                MessageBox("Er is iets mis gegaan met het opslaan van: " + sVakOmschrijving);
+                MessageBox.Show("Er is iets mis gegaan met het opslaan van: " + sVakOmschrijving, "OOPSIE!");
             }
             finally
             {
                 connect.Close();
             }
         }
+
+        public void deleteLesOnderwerp(string sloID)
+        {
+            db_connection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "delete from lesonderwerp where LesonderwerpID=@sloID";
+            cmd.Parameters.AddWithValue("@sloID", sloID);
+            cmd.Connection = connect;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Het lesonderwerp is succesvol verwijderd.", "YAY!");
+            }
+            catch
+            {
+                MessageBox.Show("Er is iets mis gegaan met het vewijderen van het lesonderwerp, probeer later nog eens.", "Oh nee!");
+            }
+            finally
+            {
+                connect.Close();
+            }
+
+        }
+
+        public void newLes(string sloID, string sLesNaam, string sUitleg, RegLes regform, LesonderwerpWijzig lesbeheerform)
+        {
+            db_connection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "insert into les (LesID, Uitleg, LesonderwerpID, lesNaam) VALUES (NULL, @sUitleg, @sloID, @sLesNaam);";
+            cmd.Parameters.AddWithValue("@sloID", sloID);
+            cmd.Parameters.AddWithValue("@sLesNaam", sLesNaam);
+            cmd.Parameters.AddWithValue("@sUitleg", sUitleg);
+            cmd.Connection = connect;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("De les: " + sLesNaam + " is succesvol aangemaakt.", "WOOHOO!");
+                lesbeheerform.Show();
+                regform.Close();
+
+            }
+            catch
+            {
+                MessageBox.Show("Er is iets mis gegaan met het opslaan van: ", "OOPSIE!");
+            }
+            finally
+            {
+                connect.Close();
+
+            }
+        }
     }
-    }
+}
+
+        

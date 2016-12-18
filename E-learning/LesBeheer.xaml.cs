@@ -76,5 +76,12 @@ namespace E_learning
             _lastForm.Show();
             this.Close();
         }
+
+        private void btToevoeg_Click(object sender, RoutedEventArgs e)
+        {
+            RegLes rl = new RegLes(_sLesOndID, this);
+            rl.Show();
+            this.Hide();
+        }
     }
 }

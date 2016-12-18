@@ -53,7 +53,7 @@ namespace E_learning
         {
             if (lbAlleLesOndwrp.SelectedIndex == -1)
             {
-                MessageBox.Show("Selecteer eerst een lesonderwerp om verder te gaan!");
+                MessageBox.Show("Selecteer eerst een lesonderwerp om verder te gaan!", "oops!");
             }
 
             else
@@ -70,6 +70,20 @@ namespace E_learning
             RegLesOnd rlo = new RegLesOnd(this);
             rlo.Show();
             this.Hide();
+        }
+
+        private void btVerwijder_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbAlleLesOndwrp.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecteer eerst een lesonderwerp om verder te gaan!", "oops!");
+            }
+
+            else
+            {
+                string saloID = ((AlleLesOnderdeel)(lbAlleLesOndwrp.SelectedItem)).aloID;
+                db.deleteLesOnderwerp(saloID);
+            }
         }
     }
 }

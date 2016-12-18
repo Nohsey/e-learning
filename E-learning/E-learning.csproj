@@ -55,8 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LesWijzig.xaml.cs">
-      <DependentUpon>LesWijzig.xaml</DependentUpon>
+    <Compile Include="RegLes.xaml.cs">
+      <DependentUpon>RegLes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vraagbeheer.xaml.cs">
+      <DependentUpon>Vraagbeheer.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegLesOnd.xaml.cs">
       <DependentUpon>RegLesOnd.xaml</DependentUpon>
@@ -69,15 +72,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="lesonderwerpbeheer.xaml">
+    <Page Include="LesOnderwerpBeheer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LesonderwerpWijzig.xaml">
+    <Page Include="LesBeheer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LesWijzig.xaml">
+    <Page Include="RegLes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vraagbeheer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -96,11 +103,11 @@
     <Compile Include="Keuzemenu_Leerling.xaml.cs">
       <DependentUpon>Keuzemenu_Leerling.xaml</DependentUpon>
     </Compile>
-    <Compile Include="lesonderwerpbeheer.xaml.cs">
-      <DependentUpon>lesonderwerpbeheer.xaml</DependentUpon>
+    <Compile Include="LesOnderwerpBeheer.xaml.cs">
+      <DependentUpon>LesOnderwerpBeheer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LesonderwerpWijzig.xaml.cs">
-      <DependentUpon>LesonderwerpWijzig.xaml</DependentUpon>
+    <Compile Include="LesBeheer.xaml.cs">
+      <DependentUpon>LesBeheer.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

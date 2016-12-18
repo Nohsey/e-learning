@@ -62,7 +62,8 @@ namespace E_learning
         private void btToevoegen_Click(object sender, RoutedEventArgs e)
         {
             string svakID = ((Vak)(cbVakken.SelectedItem)).vakID;
-            db.newLesOnderwerp(svakID, tbLesOmschrijving.Text);
+            db.newLesOnderwerp(svakID, tbLesOmschrijving.Text, this);
+
         }
     }
 }
