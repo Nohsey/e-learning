@@ -1,0 +1,106 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="E_learning.LesWijzig"
+	x:Name="Window"
+	Title="LesWijzig"
+	Width="1230" Height="812" Icon="img/LOGO.png" ResizeMode="NoResize" Background="#FFAFD8DF">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid x:Name="grGrid" HorizontalAlignment="Left" Margin="0,0,0,-1" Width="1222">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="25*"/>
+				<RowDefinition Height="477*"/>
+				<RowDefinition Height="26*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="132*"/>
+				<ColumnDefinition Width="0*"/>
+				<ColumnDefinition Width="470*"/>
+				<ColumnDefinition Width="485*"/>
+				<ColumnDefinition Width="135*"/>
+			</Grid.ColumnDefinitions>
+			<Image x:Name="imgLogo" Grid.Column="2" Height="174" Margin="86,68.2,85.8,0" Grid.Row="1" VerticalAlignment="Top" Source="img/LOGO.png" Grid.ColumnSpan="2"/>
+			<Label x:Name="lbTitel" Content="E-LEARNING" Grid.Column="2" HorizontalAlignment="Center" Margin="336.1,1.2,334.9,0" VerticalAlignment="Top" Width="284" Foreground="White" FontSize="48" Height="64" Grid.ColumnSpan="2" Grid.Row="1"/>
+			<Button x:Name="btTerug" Content="Terug" HorizontalAlignment="Left" Margin="10,653,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="2" Click="btTerug_Click">
+				<Button.Style>
+					<Style TargetType="{x:Type Button}">
+						<Setter Property="Background" Value="#EE5446"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Button}">
+									<Border Background="{TemplateBinding Background}">
+										<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+									</Border>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+						<Style.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Background" Value="#EC5C4F"/>
+							</Trigger>
+						</Style.Triggers>
+					</Style>
+				</Button.Style>
+			</Button>
+			<ListBox x:Name="lbVragenVanLes" Grid.Column="2" Height="313.097" Margin="3.734,295.473,413.615,0" Grid.Row="1" VerticalAlignment="Top" Background="#CCFFFFFF" Foreground="#FF363636" BorderBrush="#FFB2B2B2" FontSize="24" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+				<ListBox.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform AngleY="-0.289"/>
+						<RotateTransform/>
+						<TranslateTransform Y="1.2"/>
+					</TransformGroup>
+				</ListBox.RenderTransform>
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding lesNaam}"/>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<Button x:Name="btToevoeg" Content="Vraag toevoegen" HorizontalAlignment="Left" Margin="108.675,362.64,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
+				<Button.Style>
+					<Style TargetType="{x:Type Button}">
+						<Setter Property="Background" Value="#EE5446"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Button}">
+									<Border Background="{TemplateBinding Background}">
+										<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+									</Border>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+						<Style.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Background" Value="#EC5C4F"/>
+							</Trigger>
+						</Style.Triggers>
+					</Style>
+				</Button.Style>
+			</Button>
+			<Button x:Name="btVerwijder" Content="Vraag verwijderen" HorizontalAlignment="Left" Margin="108.675,427.556,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
+				<Button.Style>
+					<Style TargetType="{x:Type Button}">
+						<Setter Property="Background" Value="#EE5446"/>
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Button}">
+									<Border Background="{TemplateBinding Background}">
+										<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+									</Border>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+						<Style.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Background" Value="#EC5C4F"/>
+							</Trigger>
+						</Style.Triggers>
+					</Style>
+				</Button.Style>
+			</Button>
+			<Label x:Name="lbVragenhieronder" Content="Hieronder ziet u een lijst met vragen:" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2" Margin="0,260,0,0" Grid.Row="1" Foreground="White" Grid.ColumnSpan="2" Width="540" FontSize="22"/>
+		</Grid>
+	</Grid>
+</Window>

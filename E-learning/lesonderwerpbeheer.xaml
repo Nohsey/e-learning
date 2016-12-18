@@ -54,7 +54,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <Button x:Name="btToevoeg" Content="Nieuw" HorizontalAlignment="Left" Margin="108.675,362.64,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
+            <Button x:Name="btToevoeg" Content="Nieuw" HorizontalAlignment="Left" Margin="108.675,362.64,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3" Click="btToevoeg_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="#EE5446"/>
@@ -75,7 +75,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="btWijzig_Copy" Content="Wijzigen" HorizontalAlignment="Left" Margin="108.675,426.496,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
+            <Button x:Name="btWijzig" Content="Wijzigen" HorizontalAlignment="Left" Margin="108.675,426.496,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3" Click="btWijzig_Copy_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="#EE5446"/>
@@ -96,7 +96,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="btWijzig_Copy1" Content="Verwijderen" HorizontalAlignment="Left" Margin="108.675,491.556,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
+            <Button x:Name="btWijzig1" Content="Verwijderen" HorizontalAlignment="Left" Margin="108.675,491.556,0,0" Grid.Row="1" VerticalAlignment="Top" Width="350" Height="46" Foreground="White" FontSize="20" BorderBrush="#FFEE5446" Grid.Column="3">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="#EE5446"/>

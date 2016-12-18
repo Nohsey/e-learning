@@ -37,11 +37,11 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBox x:Name="tbUser" Padding="6" HorizontalAlignment="Left" Height="35" Margin="51,294.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="371" Grid.ColumnSpan="5" FontSize="14" TextAlignment="Center" MaxLines="1" TextWrapping="Wrap" Foreground="#FF565859" BorderBrush="White" SelectionBrush="#FF229598" OpacityMask="#FF219497"/>
+        <TextBox x:Name="tbUser" Padding="6" HorizontalAlignment="Left" Height="35" Margin="51,294.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="371" Grid.ColumnSpan="5" FontSize="14" TextAlignment="Center" MaxLines="1" TextWrapping="Wrap" Foreground="#FF565859" BorderBrush="White" SelectionBrush="#FFEE5446" OpacityMask="#FF219497"/>
         <Label x:Name="lbWachtwoord" Content="Wachtwoord:" Grid.Column="2" Margin="126,342.2,121.8,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Center" Height="27" Width="121" FontSize="16" Grid.ColumnSpan="2"/>
         <Label x:Name="lbGebruikersnaam" Content="Gebruikersnaam:" Grid.Column="2" Margin="113,262.2,110.8,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.341,-1.655" HorizontalAlignment="Center" Foreground="White" Width="145" Height="32" FontSize="16" Grid.ColumnSpan="2"/>
         <Image x:Name="imgLogo" Grid.Column="2" Height="174" Margin="86,68.2,85.8,0" Grid.Row="1" VerticalAlignment="Top" Source="img/LOGO.png" Grid.ColumnSpan="2"/>
         <Label x:Name="lbTitel" Content="E-LEARNING" Grid.Column="2" HorizontalAlignment="Center" Margin="43,1.2,41.8,0" VerticalAlignment="Top" Width="284" Foreground="White" FontSize="48" Height="64" Grid.ColumnSpan="2" Grid.Row="1"/>
-        <PasswordBox x:Name="pbPassword" HorizontalContentAlignment="Center" Padding="6" HorizontalAlignment="Left" Margin="51,374.4,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="4" Width="369" FontSize="14" Height="35" Foreground="#FF565859" SelectionBrush="#FF229598"/>
+        <PasswordBox x:Name="pbPassword" HorizontalContentAlignment="Center" Padding="6" HorizontalAlignment="Left" Margin="51,374.4,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="4" Width="369" FontSize="14" Height="35" Foreground="#FF565859" SelectionBrush="#FFEE5446"/>
     </Grid>
 </Window>

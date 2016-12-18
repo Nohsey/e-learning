@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.60617.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LesWijzig.xaml.cs">
+      <DependentUpon>LesWijzig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegLesOnd.xaml.cs">
+      <DependentUpon>RegLesOnd.xaml</DependentUpon>
+    </Compile>
     <Page Include="cmsmenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -62,13 +69,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LesForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="lesonderwerpbeheer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LesonderwerpWijzig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LesWijzig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -85,16 +96,20 @@
     <Compile Include="Keuzemenu_Leerling.xaml.cs">
       <DependentUpon>Keuzemenu_Leerling.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LesForm.xaml.cs">
-      <DependentUpon>LesForm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="lesonderwerpbeheer.xaml.cs">
       <DependentUpon>lesonderwerpbeheer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LesonderwerpWijzig.xaml.cs">
+      <DependentUpon>LesonderwerpWijzig.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RegLesOnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

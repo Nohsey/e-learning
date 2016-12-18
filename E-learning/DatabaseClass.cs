@@ -156,7 +156,7 @@ namespace E_learning
             DataTable retValue = new DataTable();
             db_connection();
 
-            using (MySqlCommand cmd = new MySqlCommand("Select * from lesonderwerp"))
+            using (MySqlCommand cmd = new MySqlCommand("Select * from lesonderwerp order by LesOmschrijving"))
             {
                 cmd.Connection = connect;
                 MySqlDataReader reader = cmd.ExecuteReader();
@@ -165,6 +165,29 @@ namespace E_learning
             }
             return retValue;
 
+        }
+
+        public void newLesOnderwerp(string sVakID, string sVakOmschrijving)
+        {
+            db_connection();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "insert into lesonderwerp (LesonderwerpID, LesOmschrijving, VakID) VALUES (NULL, @vakoms, @vakid);";
+            cmd.Parameters.AddWithValue("@vakid", sVakID);
+            cmd.Parameters.AddWithValue("@vakoms", sVakOmschrijving);
+            cmd.Connection = connect;         
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox("Er is iets mis gegaan met het opslaan van: " + sVakOmschrijving);
+            }
+            finally
+            {
+                connect.Close();
+            }
         }
     }
     }

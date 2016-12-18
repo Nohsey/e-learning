@@ -109,9 +109,9 @@ namespace E_learning
 
             else {
                 string sLesID = ((Les)(lbLessen.SelectedItem)).lesID;
-                LesForm les = new LesForm(sLesID);
-                les.Show();
-                this.Hide();
+                //LesForm les = new LesForm(sLesID);
+                //les.Show();
+                //this.Hide();
             }
         }
         

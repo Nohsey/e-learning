@@ -1,7 +1,7 @@
 ﻿<Window x:Class="E_learning.cmsmenu"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="cmsmenu" Height="644.8" Width="538" Background="#FFAFD8DF" Icon="img/LOGO.png">
+        Title="cmsmenu" Height="644.8" Width="538" Background="#FFAFD8DF" ResizeMode="NoResize">
     <Grid>
     	<Grid.RowDefinitions>
     		<RowDefinition Height="581*"/>

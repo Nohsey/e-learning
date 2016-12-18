@@ -48,5 +48,28 @@ namespace E_learning
 
             lbAlleLesOndwrp.ItemsSource = lstAlleLesOnderdeel;
         }
+
+        private void btWijzig_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbAlleLesOndwrp.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecteer eerst een lesonderwerp om verder te gaan!");
+            }
+
+            else
+            {
+                string saloID = ((AlleLesOnderdeel)(lbAlleLesOndwrp.SelectedItem)).aloID;
+                LesonderwerpWijzig lowform = new LesonderwerpWijzig(saloID, this);
+                lowform.Show();
+                this.Hide();
+            }
+        }
+
+        private void btToevoeg_Click(object sender, RoutedEventArgs e)
+        {
+            RegLesOnd rlo = new RegLesOnd(this);
+            rlo.Show();
+            this.Hide();
+        }
     }
 }
